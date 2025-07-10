@@ -2,4 +2,6 @@ a = int(input("Primer dígito:"))
 b = int(input("Segundo dígito:"))
 
 suma = a+b
-print("Suma total:", suma)
+resta = a-b
+print("Suma total:", suma, "Resta total:", resta)
+
