@@ -1,11 +1,10 @@
-a = int(input("Primer dígito:"))
-b = int(input("Segundo dígito:"))
+def calcular(a, b):
+    return a + b, a - b, a / b if b else None
 
-#Cálculos
-suma = a+b
-resta = a-b
-División = a/b
+a = int(input("Primer dígito: "))
+b = int(input("Segundo dígito: "))
 
-#Resultados
-print("Suma total:", suma, "Resta total:", resta, "División", División)
+s, r, d = calcular(a, b)
+print("Suma:", s, "Resta:", r, "División:", d if d is not None else "Error")
+
 
