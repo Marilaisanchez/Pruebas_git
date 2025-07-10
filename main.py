@@ -1,10 +1,9 @@
-a = int(input("Primer dígito:"))
-b = int(input("Segundo dígito:"))
+def par_impar(n):
+    return "par" if n % 2 == 0 else "impar"
 
-#Cálculos
-suma = a+b
-resta = a-b
+a = int(input("Primer dígito: "))
+b = int(input("Segundo dígito: "))
 
-#Resultados
-print("Suma total:", suma, "Resta total:", resta)
+print(f"El primer dígito:{a} es {par_impar(a)}")
+print(f"El segundo dígito: {b} es {par_impar(b)}")
 
